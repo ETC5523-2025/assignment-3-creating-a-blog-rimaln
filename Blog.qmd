@@ -29,17 +29,28 @@ Figure @ref(fig:nitrate) shows the temporal variation of nitrate.
 knitr::include_graphics("nitrate_timeseries.png")
 ```
 
-Table @ref(tab:sites_summary) summarises the stream sites, monitoring periods, and measured variables.
+```{r}
+library(knitr)
 
-| Stream Name           | Location  | Monitoring Period | Sensors / Variables Measured                    |
-|-----------------------|-----------|-----------------|------------------------------------------------|
-| Arikaree River        | Colorado  | 2017–2019       | Nitrate, Conductivity, Turbidity, DO, Temp    |
-| Caribou–Poker Creeks  | Alaska    | 2017–2019       | Nitrate, Conductivity, Turbidity, DO, Temp    |
-| Lewis Run             | Virginia  | 2017–2019       | Nitrate, Conductivity, Turbidity, DO, Temp    |
+# Create data frame for stream sites
+sites_summary <- data.frame(
+  `Stream Name` = c("Arikaree River", "Caribou–Poker Creeks", "Lewis Run"),
+  Location = c("Colorado", "Alaska", "Virginia"),
+  `Monitoring Period` = c("2017–2019", "2017–2019", "2017–2019"),
+  `Sensors / Variables Measured` = c(
+    "Nitrate, Conductivity, Turbidity, DO, Temp",
+    "Nitrate, Conductivity, Turbidity, DO, Temp",
+    "Nitrate, Conductivity, Turbidity, DO, Temp"
+  )
+)
 
-(Table caption: Overview of stream sites, monitoring period, and measured variables.) {#tab:sites_summary}
-
-The three streams studied vary in climate and land use (Table @ref(tab:sites)), which allows us to test whether a common modelling framework can capture nitrate variation across different conditions.
+# Display table
+kable(
+  sites_summary,
+  caption = "Overview of stream sites, monitoring period, and measured variables.",
+  align = "lccc"
+)
+```
 
 ## Key Findings
 
