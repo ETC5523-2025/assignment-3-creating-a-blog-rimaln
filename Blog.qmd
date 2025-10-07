@@ -52,6 +52,9 @@ kable(
 )
 ```
 
+The three streams studied vary in climate and land use Table @ref(tab:sites_summary), which allows us to test whether a common modelling framework can capture nitrate variation across different conditions.
+
+
 ## Key Findings
 
 1.  **Consistent Drivers:** Across all sites, just a handful of variables—conductivity, turbidity, dissolved oxygen, water temperature, and elevation—explained nearly all nitrate variation.
