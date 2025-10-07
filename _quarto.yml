@@ -2,16 +2,16 @@ project:
   type: website
 
 website:
-  title: "Rimlan Alva – Data Stories"
+  title: "Portfolio"
   navbar:
     right:
       - about.qmd
       - icon: github
         href: https://github.com/rimaln
+      - text: "Blog"
+        href: blog.qmd
+
 format:
   html:
     theme: cosmo
     css: styles.css
-
-
-
