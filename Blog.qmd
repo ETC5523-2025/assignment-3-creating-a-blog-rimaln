@@ -31,11 +31,11 @@ knitr::include_graphics("nitrate_timeseries.png")
 
 Table @ref(tab:sites_summary) summarises the stream sites, monitoring periods, and measured variables.
 
-| Stream Name | Location | Monitoring Period | Sensors / Variables Measured |
-|--------------|--------------|--------------|------------------------------|
-| Arikaree River | Colorado | 2017–2019 | Nitrate, Conductivity, Turbidity, DO, Temp |
-| Caribou–Poker Creeks | Alaska | 2017–2019 | Nitrate, Conductivity, Turbidity, DO, Temp |
-| Lewis Run | Virginia | 2017–2019 | Nitrate, Conductivity, Turbidity, DO, Temp |
+| Stream Name           | Location  | Monitoring Period | Sensors / Variables Measured                    |
+|-----------------------|-----------|-----------------|------------------------------------------------|
+| Arikaree River        | Colorado  | 2017–2019       | Nitrate, Conductivity, Turbidity, DO, Temp    |
+| Caribou–Poker Creeks  | Alaska    | 2017–2019       | Nitrate, Conductivity, Turbidity, DO, Temp    |
+| Lewis Run             | Virginia  | 2017–2019       | Nitrate, Conductivity, Turbidity, DO, Temp    |
 
 (Table caption: Overview of stream sites, monitoring period, and measured variables.) {#tab:sites_summary}
 
