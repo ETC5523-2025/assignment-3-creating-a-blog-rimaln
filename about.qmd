@@ -10,8 +10,6 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/rimlan-alva-149581282/
-      
-
 ---
 
 # 👋 Hi, I'm Rimlan
