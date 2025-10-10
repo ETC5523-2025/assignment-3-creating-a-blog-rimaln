@@ -1,147 +1,149 @@
+/* === GLOBAL STYLES === */
 body {
-  background: linear-gradient(180deg, #0b0c10 0%, #121820 100%);
-  color: #e5e9f0;
+  background: linear-gradient(180deg, #0a0f1a 0%, #111827 100%);
+  color: #e2e8f0;
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.7;
+  margin: 0;
 }
 
-/* Navbar */
+/* === NAVBAR === */
 .navbar-dark, .quarto-title-banner {
-  background: linear-gradient(90deg, #003f6f, #0077b6);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(90deg, #002b5b, #004b8d);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar .nav-link {
-  color: #eaf4ff !important;
+  color: #dcefff !important;
   font-weight: 500;
   transition: color 0.3s ease;
 }
+
 .navbar .nav-link:hover {
-  color: #90e0ef !important;
+  color: #5cd6ff !important;
 }
 
-/* Headings */
+/* === HEADINGS === */
 h1, h2, h3, h4, h5, h6 {
-  color: #ade8f4;
+  color: #89cff0;
   font-weight: 700;
   letter-spacing: 0.3px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-/* Links */
+/* === LINKS === */
 a {
-  color: #48cae4;
+  color: #38bdf8;
   text-decoration: none;
   border-bottom: 1px dotted transparent;
   transition: all 0.25s ease;
 }
 
 a:hover {
-  color: #90e0ef;
-  border-bottom: 1px dotted #90e0ef;
+  color: #7dd3fc;
+  border-bottom: 1px dotted #7dd3fc;
 }
 
-/* Cards & Listings */
+/* === CARDS & SECTIONS === */
 .quarto-post, .quarto-listing-item, .card {
-  background: #1b263b;
+  background: #1e293b;
   border-radius: 14px;
-  border: 1px solid rgba(72, 202, 228, 0.2);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .quarto-post:hover, .quarto-listing-item:hover, .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0, 150, 199, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
 }
 
-/* Buttons */
+/* === BUTTONS === */
 button, .btn {
   background: linear-gradient(90deg, #0077b6, #00b4d8);
   color: #fdfdfd;
   border-radius: 8px;
   border: none;
-  padding: 0.5em 1.2em;
+  padding: 0.6em 1.3em;
   font-weight: 500;
   transition: all 0.25s ease;
 }
 
 button:hover, .btn:hover {
-  background: linear-gradient(90deg, #0096c7, #00e0ff);
+  background: linear-gradient(90deg, #00a6c9, #00e0ff);
   box-shadow: 0 4px 15px rgba(0, 180, 216, 0.4);
 }
 
+/* === CONTACT BLOCKS === */
 .contact-blocks {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem; /* spacing between blocks */
-  max-width: 300px;
-  margin-top: 1.5rem;
+  align-items: center;
+  gap: 0.8rem;
+  max-width: 320px;
+  margin: 2rem auto;
 }
 
-/* Each block */
 .contact-blocks a {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.6rem;
-  padding: 0.7rem 1rem;
+  width: 100%;
+  padding: 0.8rem 1.2rem;
   border-radius: 12px;
   background: linear-gradient(135deg, #0a3d62, #1e5aa8);
-  color: #cce0ff;
+  color: #dbeafe;
   font-weight: 500;
   text-decoration: none;
   box-shadow: 0 4px 12px rgba(10, 60, 98, 0.4);
   transition: all 0.25s ease;
 }
 
-/* Hover effect */
 .contact-blocks a:hover {
-  background: linear-gradient(135deg, #1e5aa8, #3b7dd8);
+  background: linear-gradient(135deg, #1e5aa8, #3b82f6);
+  transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(10, 60, 98, 0.6);
-  transform: translateY(-2px);
 }
 
-/* Icons */
 .contact-blocks i {
   font-size: 1.3rem;
-  color: #a6d0ff;
+  color: #7dd3fc;
 }
 
-/* Text */
 .contact-blocks a:hover i {
   color: #ffffff;
 }
 
-
-/* Footer or Page Bottom */
+/* === FOOTER === */
 footer, .footer {
   background-color: #001d3d;
-  color: #caf0f8;
+  color: #cde8ff;
   text-align: center;
   padding: 1.2rem 0;
   margin-top: 3rem;
   border-top: 2px solid #0077b6;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
 }
 
+/* === “WHAT I WORK WITH” SECTION === */
 .work-section.full-vertical {
-  /* Keep all your existing styles here, like display: flex, etc. */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 60vh;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 720px;
+  margin: 3rem auto;
   padding: 2rem;
-  background: rgba(0, 70, 150, 0.3);
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-  text-align: center; /* This centers the headings */
+  background: rgba(0, 70, 150, 0.25);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  text-align: center;
+  color: #e2e8f0;
 }
 
-/* Updated rule to correctly center list items while keeping text readable */
 .work-section ul {
   list-style-position: inside;
   display: inline-block;
@@ -149,39 +151,122 @@ footer, .footer {
   padding-left: 0;
 }
 
-
-/* === FIX: REMOVE VERTICAL LINE AND FORCE SINGLE COLUMN ALIGNMENT FOR TRESTLES === */
-
-/* 1. Remove the dividing line on the main content area */
-.quarto-content {
-    border-right: none !important;
-}
-
-/* 2. Remove the line from the profile section column (specific to trestles) */
-.about-entity,
+/* === FIX: REMOVE DIVIDERS FROM TRESTLES TEMPLATE === */
+.quarto-content,
 .about-template-trestles .about-entity {
-    border-right: none !important;
+  border-right: none !important;
 }
 
-/* 3. Force the main content column (the one with your photo/bio) to span full width */
 .about-template-trestles .g-col-lg-8,
 .about-template-trestles .g-col-12 {
-    /* The main content area in trestles is often g-col-lg-8. We force it to be 12 (full width) */
-    flex-grow: 1;
-    max-width: 100%;
+  flex-grow: 1;
+  max-width: 100%;
 }
 
-/* 4. Center the entire page content within the browser window */
-.quarto-page,
-.quarto-content {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+.quarto-page, .quarto-content {
+  margin: 0 auto !important;
+  padding: 0 15px !important;
 }
 
-/* 5. Target the container that holds the About sections (like the one with your photo/links) */
 .quarto-about-contents {
-    display: block; /* Change from grid/flex to block to stop column behavior */
-    width: 100%;
+  display: block;
+  width: 100%;
 }
+
+/* === FORCE: remove vertical divider & force single-column for Trestles ===
+   Paste this at the END of styles.css (must be last rules) === */
+
+.about-template-trestles .about-entity,
+.about-template-trestles .about-contents,
+.about-template-trestles .quarto-about-contents,
+.about-template-trestles .g-row,
+.about-template-trestles .g-col,
+.about-template-trestles [class*="g-col-"],
+.quarto-page, .quarto-content, main {
+  border: none !important;
+  border-right: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
+/* Remove pseudo-elements or lines inserted via ::before/::after */
+.about-template-trestles .about-entity::before,
+.about-template-trestles .about-contents::before,
+.about-template-trestles .quarto-about-contents::before,
+.quarto-content::before,
+.quarto-page::before,
+.about-template-trestles .g-row::before,
+.about-template-trestles .g-col::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* Force columns to stack as one column and occupy full width */
+.about-template-trestles .g-row,
+.about-template-trestles .g-col,
+.about-template-trestles [class*="g-col-"] {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  float: none !important;
+}
+
+/* Ensure the about contents flow left-to-right inside the single column */
+.about-template-trestles .about-contents,
+.about-template-trestles .about-contents > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  text-align: left !important;
+}
+
+/* center profile image and make it tidy */
+.about-template-trestles .about-entity img,
+.quarto-about-trestles .about-entity img {
+  display: block !important;
+  margin: 0 auto 1.2rem auto !important;
+  border-radius: 50% !important;
+  width: 160px !important;
+  height: 160px !important;
+  object-fit: cover !important;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.6) !important;
+}
+
+/* safety: remove any remaining thin border color */
+* {
+  outline: none !important;
+}
+
+/* small device tweak */
+@media (max-width: 991px) {
+  .about-template-trestles .quarto-about-contents {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+<style>
+/* Inline override: highest priority */
+.about-template-trestles .about-entity,
+.about-template-trestles .about-contents,
+.about-template-trestles .quarto-about-contents,
+.about-template-trestles .g-row,
+.about-template-trestles .g-col,
+.about-template-trestles [class*="g-col-"] {
+  border: none !important;
+  box-shadow: none !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.about-template-trestles .about-entity::before,
+.about-template-trestles .about-contents::before { display:none !important; content:none !important; }
+</style>
+
+.about-template-trestles .quarto-about-contents {
+  max-width: 880px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 2rem 1rem !important;
+}
+

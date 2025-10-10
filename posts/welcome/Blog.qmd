@@ -1,7 +1,12 @@
 ---
 title: "High-Frequency Sensors Reveal What Drives Nitrate in Our Streams"
 author: "Rimlan Alva"
-format: html
+format:
+  html:
+    code-fold: true
+    code-tools: true
+    toc: true
+    crossref: false
 editor: visual
 ---
 
@@ -57,7 +62,7 @@ kable(
 )
 ```
 
-The three streams studied vary in climate and land use Table @tbl-sites_summary, which allows us to test whether a common modelling framework can capture nitrate variation across different conditions.
+The three streams studied vary in climate and land use  @tbl-sites-summary, which allows us to test whether a common modelling framework can capture nitrate variation across different conditions.
 
 ## Key Findings
 
@@ -83,4 +88,4 @@ High-frequency monitoring doesn’t just improve our understanding of streams—
 
 ## References
 
-Smith, J., & Brown, L. (2024). *Understanding links between water-quality variables and nitrate concentration in freshwater streams using high frequency sensor data*. Environmental Monitoring Journal, 15(3), 145–160. https://doi.org/10.1234/emj.2024.015
+Smith, J., & Brown, L. (2024). *Understanding links between water-quality variables and nitrate concentration in freshwater streams using high frequency sensor data*. Environmental Monitoring Journal, 15(3), 145–160. [https://doi.org/10.1234/emj.2024.015](https://doi.org/10.1234/emj.2024.015)
