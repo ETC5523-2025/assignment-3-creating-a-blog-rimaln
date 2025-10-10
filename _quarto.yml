@@ -8,8 +8,6 @@ website:
     background: "#121212"
     foreground: "#f5f5f5"
     left:
-      - text: "Home"
-        href: about.qmd
       - text: "Projects"
         href: index.qmd
     right:

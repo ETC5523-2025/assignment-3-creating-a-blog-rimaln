@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-image: myprofile.jpg
+image: profile.jpg
 about:
   template: trestles
   links:
@@ -12,7 +12,7 @@ about:
       href: https://www.linkedin.com/in/rimlan-alva-149581282/
     - icon: envelope
       text: Mail
-      href: mailto:r.alva@student.monash.edu
+      href: mailto:ralv0004@student.monash.edu
 format:
   html:
     theme: cosmo
@@ -34,7 +34,8 @@ This website is my space to share projects, reflect on what I’m learning, and 
 
 Outside the world of data, I enjoy **throwball**, **the gym**, **cooking**, **dancing** and **travelling** — hobbies that keep me balanced, curious, and creative in how I approach problem-solving.  
 
-::: {full below}
+
+::: {.work-section.full-vertical}
 
 # 🧰 What I Work With  
 
@@ -42,7 +43,6 @@ Outside the world of data, I enjoy **throwball**, **the gym**, **cooking**, **da
 - **Analysis:** data visualisation, exploratory data analysis (EDA), model evaluation, and reproducible pipelines  
 - **Communication:** concise analytical writing, clear figure design, and stakeholder-focused reporting  
 
----
 
 ## 🎯 What I’m Exploring Next
 
@@ -55,7 +55,6 @@ Outside the world of data, I enjoy **throwball**, **the gym**, **cooking**, **da
 This site showcases selected coursework and mini-projects from my analytics journey at Monash University.  
 It’s an evolving space where I continue to refine my **visualisation style, writing, and coding practices** as I grow as an analyst.  
 
----
 
 # 📬 Contact  
 
@@ -72,4 +71,5 @@ If you’d like to connect or collaborate, you can reach me at:
     <i class="fa-brands fa-github"></i> GitHub
   </a>
 </div>
+
 :::

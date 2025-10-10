@@ -3,8 +3,6 @@ title: "High-Frequency Sensors Reveal What Drives Nitrate in Our Streams"
 author: "Rimlan Alva"
 format: html
 editor: visual
-css: none
-
 ---
 
 # High-Frequency Sensors Reveal What Drives Nitrate in Our Streams

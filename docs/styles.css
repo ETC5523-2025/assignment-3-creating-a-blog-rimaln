@@ -124,3 +124,64 @@ footer, .footer {
   border-top: 2px solid #0077b6;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
 }
+
+.work-section.full-vertical {
+  /* Keep all your existing styles here, like display: flex, etc. */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(0, 70, 150, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  text-align: center; /* This centers the headings */
+}
+
+/* Updated rule to correctly center list items while keeping text readable */
+.work-section ul {
+  list-style-position: inside;
+  display: inline-block;
+  text-align: left;
+  padding-left: 0;
+}
+
+
+/* === FIX: REMOVE VERTICAL LINE AND FORCE SINGLE COLUMN ALIGNMENT FOR TRESTLES === */
+
+/* 1. Remove the dividing line on the main content area */
+.quarto-content {
+    border-right: none !important;
+}
+
+/* 2. Remove the line from the profile section column (specific to trestles) */
+.about-entity,
+.about-template-trestles .about-entity {
+    border-right: none !important;
+}
+
+/* 3. Force the main content column (the one with your photo/bio) to span full width */
+.about-template-trestles .g-col-lg-8,
+.about-template-trestles .g-col-12 {
+    /* The main content area in trestles is often g-col-lg-8. We force it to be 12 (full width) */
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+/* 4. Center the entire page content within the browser window */
+.quarto-page,
+.quarto-content {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* 5. Target the container that holds the About sections (like the one with your photo/links) */
+.quarto-about-contents {
+    display: block; /* Change from grid/flex to block to stop column behavior */
+    width: 100%;
+}
