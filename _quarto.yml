@@ -1,17 +1,31 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "Portfolio"
+  title: "<a href='about.html' class='navbar-brand-link'>Rimlan Alva</a>"
   navbar:
+    background: "#121212"
+    foreground: "#f5f5f5"
+    left:
+      - text: "Home"
+        href: about.qmd
+      - text: "Projects"
+        href: index.qmd
     right:
-      - about.qmd
       - icon: github
         href: https://github.com/rimaln
-      - text: "Blog"
-        href: blog.qmd
+        aria-label: "GitHub"
+      - icon: linkedin
+        href: https://www.linkedin.com/in/rimlan-alva-149581282/
+        aria-label: "LinkedIn"
+      - icon: envelope
+        href: mailto:ralv0004@student.monash.edu
+        aria-label: "Email"
 
 format:
   html:
-    theme: cosmo
+    theme:
+      dark: cyborg
     css: styles.css
+    toc: true

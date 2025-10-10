@@ -3,6 +3,8 @@ title: "High-Frequency Sensors Reveal What Drives Nitrate in Our Streams"
 author: "Rimlan Alva"
 format: html
 editor: visual
+css: none
+
 ---
 
 # High-Frequency Sensors Reveal What Drives Nitrate in Our Streams
@@ -21,15 +23,20 @@ Unlike weekly or monthly manual sampling, these sensors record water-quality dat
 
 The study measured nitrate along with conductivity, turbidity, dissolved oxygen, and water temperature. Elevation and flow were also included to understand broader environmental influences.
 
-## Study Sites Summary
+## Nitrate at three streams
 
-Figure @ref(fig:nitrate) shows the temporal variation of nitrate.
+Figure @fig-nitrate shows the temporal variation of nitrate at the three streams.
 
-```{r}
+```{r, warning=FALSE}
+#| label: nitrate
+# Include the nitrate timeseries figure
 knitr::include_graphics("nitrate_timeseries.png")
 ```
 
-```{r}
+## Study Sites Summary
+
+```{r, warning=FALSE}
+#| label: sites_summary
 library(knitr)
 
 # Create data frame for stream sites
@@ -52,8 +59,7 @@ kable(
 )
 ```
 
-The three streams studied vary in climate and land use Table @ref(tab:sites_summary), which allows us to test whether a common modelling framework can capture nitrate variation across different conditions.
-
+The three streams studied vary in climate and land use Table @tbl-sites_summary, which allows us to test whether a common modelling framework can capture nitrate variation across different conditions.
 
 ## Key Findings
 

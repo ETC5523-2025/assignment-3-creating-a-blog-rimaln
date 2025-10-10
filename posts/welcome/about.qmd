@@ -1,0 +1,75 @@
+---
+title: "About Me"
+image: myprofile.jpg
+about:
+  template: trestles
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/rimaln
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/rimlan-alva-149581282/
+    - icon: envelope
+      text: Mail
+      href: mailto:r.alva@student.monash.edu
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+---
+
+# 👋 Hi, I'm Rimlan
+
+
+I am a **Master of Business Analytics [Monash University](https://www.monash.edu)**, passionate about using data to uncover insights that drive smarter and more informed decisions.  
+My studies have built a strong foundation in statistics, programming, and data communication, but what excites me most is **the power of storytelling through analytics and visualisation**.  
+
+I completed my **Bachelor of Business Administration (BBA)** with a specialisation in **Data Analytics, Human Resources, and SAP** from **[St Aloysius College (Autonomous), Mangalore](https://staloysius.edu.in/)**.  
+During my undergraduate studies, I developed a strong foundation in business strategy, data interpretation, and enterprise systems, which shaped my analytical mindset and curiosity for uncovering insights through data.
+
+I’m fascinated by how data connects to almost everything — from **business and technology** to **sports and even cooking**. Whether the dataset is small or complex, data always provides a unique lens to understand the world, reveal patterns, and challenge assumptions. I’m passionate about **transforming complex datasets into meaningful insights** using analytics and visualisation. My studies at Monash have enhanced my technical skills in **statistics, programming, and data communication**, helping me understand the full journey — from data wrangling to storytelling and presentation.
+
+This website is my space to share projects, reflect on what I’m learning, and explore how analytics can turn everyday questions into meaningful insights. I see data not just as numbers, but as a way to connect ideas across disciplines and make sense of complexity.  
+
+Outside the world of data, I enjoy **throwball**, **the gym**, **cooking**, **dancing** and **travelling** — hobbies that keep me balanced, curious, and creative in how I approach problem-solving.  
+
+::: {full below}
+
+# 🧰 What I Work With  
+
+- **Data & Code:** R (tidyverse, ggplot2, Quarto), Python (pandas), Git/GitHub  
+- **Analysis:** data visualisation, exploratory data analysis (EDA), model evaluation, and reproducible pipelines  
+- **Communication:** concise analytical writing, clear figure design, and stakeholder-focused reporting  
+
+---
+
+## 🎯 What I’m Exploring Next
+
+- Developing **high-quality, publication-ready reports** using R and Quarto with strong documentation and cross-referencing  
+- Enhancing my ability to **translate analytical findings into strategic business insights**  
+- Building **collaborative and reproducible workflows** that promote transparency and team efficiency  
+
+# 🌐 This Site  
+
+This site showcases selected coursework and mini-projects from my analytics journey at Monash University.  
+It’s an evolving space where I continue to refine my **visualisation style, writing, and coding practices** as I grow as an analyst.  
+
+---
+
+# 📬 Contact  
+
+If you’d like to connect or collaborate, you can reach me at:
+
+<div class="contact-blocks">
+  <a href="mailto:ralv0004@student.monash.edu">
+    <i class="fa-solid fa-envelope"></i> Email
+  </a>
+  <a href="https://www.linkedin.com/in/rimlan-alva-149581282/">
+    <i class="fa-brands fa-linkedin"></i> LinkedIn
+  </a>
+  <a href="https://github.com/rimaln">
+    <i class="fa-brands fa-github"></i> GitHub
+  </a>
+</div>
+:::

@@ -133,7 +133,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.qmd"> 
+    <a class="nav-link active" href="./Blog.html" aria-current="page"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -190,11 +190,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Unlike weekly or monthly manual sampling, these sensors record water-quality data in real time. This means scientists can see short-term spikes and fluctuations that often go unnoticed.</p>
 <p>The study measured nitrate along with conductivity, turbidity, dissolved oxygen, and water temperature. Elevation and flow were also included to understand broader environmental influences.</p>
 </section>
-<section id="study-sites-summary" class="level2">
-<h2 class="anchored" data-anchor-id="study-sites-summary">Study Sites Summary</h2>
-<p>Figure <span class="citation" data-cites="ref">@ref</span>(fig:nitrate) shows the temporal variation of nitrate.</p>
+<section id="nitrate-at-three-streams" class="level2">
+<h2 class="anchored" data-anchor-id="nitrate-at-three-streams">Nitrate at three streams</h2>
+<p>Figure <strong>?@fig-nitrate</strong> shows the temporal variation of nitrate at the three streams.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"nitrate_timeseries.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include the nitrate timeseries figure</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"nitrate_timeseries.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -203,45 +204,71 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Table <span class="citation" data-cites="ref">@ref</span>(tab:sites_summary) summarises the stream sites, monitoring periods, and measured variables.</p>
-<table class="caption-top table">
+</section>
+<section id="study-sites-summary" class="level2">
+<h2 class="anchored" data-anchor-id="study-sites-summary">Study Sites Summary</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Create data frame for stream sites</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>sites_summary <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Stream Name</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Arikaree River"</span>, <span class="st">"Caribou–Poker Creeks"</span>, <span class="st">"Lewis Run"</span>),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">Location =</span> <span class="fu">c</span>(<span class="st">"Colorado"</span>, <span class="st">"Alaska"</span>, <span class="st">"Virginia"</span>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Monitoring Period</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"2017–2019"</span>, <span class="st">"2017–2019"</span>, <span class="st">"2017–2019"</span>),</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Sensors / Variables Measured</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Nitrate, Conductivity, Turbidity, DO, Temp"</span>,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Nitrate, Conductivity, Turbidity, DO, Temp"</span>,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Nitrate, Conductivity, Turbidity, DO, Temp"</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Display table</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  sites_summary,</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">"Overview of stream sites, monitoring period, and measured variables."</span>,</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">align =</span> <span class="st">"lccc"</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Overview of stream sites, monitoring period, and measured variables.</caption>
 <colgroup>
-<col style="width: 19%">
-<col style="width: 19%">
-<col style="width: 19%">
-<col style="width: 41%">
+<col style="width: 22%">
+<col style="width: 10%">
+<col style="width: 20%">
+<col style="width: 46%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Stream Name</th>
-<th>Location</th>
-<th>Monitoring Period</th>
-<th>Sensors / Variables Measured</th>
+<th style="text-align: left;">Stream.Name</th>
+<th style="text-align: center;">Location</th>
+<th style="text-align: center;">Monitoring.Period</th>
+<th style="text-align: center;">Sensors…Variables.Measured</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Arikaree River</td>
-<td>Colorado</td>
-<td>2017–2019</td>
-<td>Nitrate, Conductivity, Turbidity, DO, Temp</td>
+<td style="text-align: left;">Arikaree River</td>
+<td style="text-align: center;">Colorado</td>
+<td style="text-align: center;">2017–2019</td>
+<td style="text-align: center;">Nitrate, Conductivity, Turbidity, DO, Temp</td>
 </tr>
 <tr class="even">
-<td>Caribou–Poker Creeks</td>
-<td>Alaska</td>
-<td>2017–2019</td>
-<td>Nitrate, Conductivity, Turbidity, DO, Temp</td>
+<td style="text-align: left;">Caribou–Poker Creeks</td>
+<td style="text-align: center;">Alaska</td>
+<td style="text-align: center;">2017–2019</td>
+<td style="text-align: center;">Nitrate, Conductivity, Turbidity, DO, Temp</td>
 </tr>
 <tr class="odd">
-<td>Lewis Run</td>
-<td>Virginia</td>
-<td>2017–2019</td>
-<td>Nitrate, Conductivity, Turbidity, DO, Temp</td>
+<td style="text-align: left;">Lewis Run</td>
+<td style="text-align: center;">Virginia</td>
+<td style="text-align: center;">2017–2019</td>
+<td style="text-align: center;">Nitrate, Conductivity, Turbidity, DO, Temp</td>
 </tr>
 </tbody>
 </table>
-<p>(Table caption: Overview of stream sites, monitoring period, and measured variables.) {#tab:sites_summary}</p>
-<p>The three streams studied vary in climate and land use (Table <span class="citation" data-cites="ref">@ref</span>(tab:sites)), which allows us to test whether a common modelling framework can capture nitrate variation across different conditions.</p>
+</div>
+</div>
+<p>The three streams studied vary in climate and land use Table <strong>?@tbl-sites_summary</strong>, which allows us to test whether a common modelling framework can capture nitrate variation across different conditions.</p>
 </section>
 <section id="key-findings" class="level2">
 <h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>

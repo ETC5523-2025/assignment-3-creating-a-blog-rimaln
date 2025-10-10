@@ -1,12 +1,10 @@
 ---
 title: "Welcome To My Blog Template"
-author: "Emi Tanaka"
-date: "2022-07-18"
-categories: [news]
+author: "Rimlan Alva"
+date: "2025-10-07"
+hide: true
+listing: false
 ---
 
-This is the first post in a Quarto blog. Welcome!
-
-![](thumbnail.jpg)
 
 
