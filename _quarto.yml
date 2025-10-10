@@ -10,6 +10,8 @@ website:
     left:
       - text: "Projects"
         href: index.qmd
+      - text: "About Me"
+        href: about.qmd
     right:
       - icon: github
         href: https://github.com/rimaln

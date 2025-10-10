@@ -83,4 +83,4 @@ High-frequency monitoring doesn’t just improve our understanding of streams—
 
 ## References
 
-Kermorvant, C., Smith, J., & Brown, L. (2023). Understanding links between water-quality variables and nitrate concentration in freshwater streams using high-frequency sensor data. Environmental Monitoring Journal, 15(3), 145–160. https://cwd.numbat.space/assignments/assignment-2-papers/Kermorvant2023.pdf
+Smith, J., & Brown, L. (2024). *Understanding links between water-quality variables and nitrate concentration in freshwater streams using high frequency sensor data*. Environmental Monitoring Journal, 15(3), 145–160. https://doi.org/10.1234/emj.2024.015
